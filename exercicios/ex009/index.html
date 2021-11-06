@@ -5,44 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-fonte</h2>
-    <!--Código-fontes são comandos, partes de códigos -->
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em línguagem JavaScript.</p>
-    <!-- essa tag serve para deixar todas as letras como fonte monoespaçada-->
-    <pre>
-        <code>
-        num = int(input('Digite um número'))
-            if num % 2 == 0:
-                print(f'O número {num} é PAR')
-            else:
-                print(f'O número {num} é ÍMPAR')
-        </code>
-    </pre>
-    <!-- Usando uma programação em python apenas para verificar que o code não formata com identação, apenas deixa a fonte como monoespaçada, apenas se deixarmos com a tag PRÉ também, ele formata da forma que está, com espaços, quebra de linha, etc -->
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <!-- OL = Listas Ordenadas  -->
+        <li>Acordar</li>
+        <!-- LI = Item de Lista, vai aplicar a numeração automaticamente, todos os itens precisam estar entre as tags LI ( Precisam estar dentro de OL)-->
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <!-- Também podemos mudar a formatação usando o parametro type conforme abaixo -->
 
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
-    <!-- quando usar uma citação, colocar a tag Q para adicionar as aspas duplas-->
+    <ol type="1" start="2">
+        <!-- O type possui outras opções, basta digitar Type para verificar, o start seria a inicialização da contagem -->
 
-    <h2>Citações Completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:
-        <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
-            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capitulo descrevem os blocos de texto.
-        </blockquote>
-    </p>
-    <!-- Podemos usar um parametro "cite" no blockquote para inserir um link para a referencia que estamos fazendo, no site não vai aparecer nada em especificamente, porém nos mecanismos de pesquisa do google, etc, ficará como menção ao criador por exemplo-->
+        <li>Acordar</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Dormir</li>
+    </ol>
 
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando!</p>
+    <h2>Listas Não Ordenadas</h2>
+    <!-- Não tem númeração, só precisamos demarcar -->
+    <ul>
+        <li>Pão</li>
+        <li>Tomate</li>
+        <li>Leite</li>
+        <li>Açucar</li>
+        <li>Carne</li>
 
-    <h2>Texto Invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
-    <!-- Digitar bdo e escolher L ou R para ser da esquedar para direita ou ao contrário.-->
+        <!-- também podemos inserir o type= disc, circle, square  para mudar a marcação-->
+    </ul>
 </body>
 
 </html>
