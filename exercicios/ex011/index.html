@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <!-- Adaptação de imagens para cada dispositivo! -->
+    <h1> Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <!--Nessa tag abaixo devemos começar ou pela G ou pela P (maior ou menor)-->
+
+    <picture>
+        <!-- No source vamos usar o source media type
+        POR PADRÃO ele vem com o min-width, o melhor é inserirmos o valor máximo pois fica mais fácil -->
+
+        <!-- SEMPRE colocar 50px a mais do tamanho total da imagem para dar uma folga e não aparecer a barra de rolagem -->
+
+        <!-- o parametro srcset = o caminho da imagem na pasta 
+        o parametro type = tipo de arquivo, no caso image/png pois é da extensão png -->
+
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem flexível">
+    </picture>
+
+</body>
+
+</html>
