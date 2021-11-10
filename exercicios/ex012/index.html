@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+
+
+</head>
+
+<body>
+    <h1>Inserindo vídeos</h1>
+    <h2>Compatibilidade em NAVEGADORES </h2>
+    <p>Atualmente existem padrões utilizados e suportados em navegadores, são eles: </p>
+    <ul>
+        <li>MP4 (.MP4 e .M4V)</li>
+        <li>webm (sofrivel)</li>
+        <li>ogv (ogg)</li>
+    </ul>
+
+    <p>Os formatos MP4/M4V e WEBM. são os que possuem maior compatibilidade com os navegadores atualmente.
+    </p>
+    <hr>
+
+    <h2>Navegadores e Arquivos compatíveis</h2>
+    <ul type="square">
+        <li><strong>Edge</strong></li>
+        <ul>
+            <li>(.mp4 / .m4v)</li>
+        </ul>
+        <li><strong>Safari (Apple)</strong></li>
+        <ul>
+            <li>(.mp4 / .m4v)</li>
+        </ul>
+        <li><strong>Chrome</strong></li>
+        <ul>
+            <li>(.mp4 / .m4v / .webm / .ogv)</li>
+        </ul>
+        <li><strong>Mozila Firefox</strong></li>
+        <ul>
+            <li>(.webm / .ogv)</li>
+        </ul>
+        <li><strong>Opera</strong></li>
+        <ul>
+            <li>(.webm / .ogv)</li>
+        </ul>
+    </ul>
+    <hr>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video src="video/meu-video.mp4" width="450" controls></video>
+
+    <p>Como vimos acima, cada navegador é compatível com um arquivo, por isso, é importante adicionar todos os arquivos para o mesmo vídeo.</p>
+    <p>Isso porque o usuário pode acessar seu site do Chrome, do Safari, Firefox, ou qualquer outro, e não conseguir reproduzir o vídeo, pois o formato que você inseriu, não é compativel.</p>
+
+    <!-- Fazendo na forma simples de cima, não é o ideal, pois devemos inserir todos os arquivos para todos os navegadores -->
+
+    <P><strong>Lembrando que fazendo dessa forma estamos hospedando localmente, podem e vão consumir muito tráfego de dados. </strong></P>
+    <video controls width="450"> <!-- Aqui podemos adicionar também o parametro poster="caminho de uma imagem para ser capa do vídeo "-->
+        <source src="video/meu-video.mp4" type="video/mp4">
+        <source src="video/meu-video.m4v" type="video/mp4">
+        <source src="video/meu-video.webm" type="video/webm">
+        <source src="video/meu-video.ogv" type="video/ogg">
+
+        <!-- Caso nenhum seja compativel mostra essa mensagem
+        LEMBRANDO TAMBÉM QUE A ORDEM É IMPORTANTE, POIS VAI COMEÇAR DO PRIMEIRO, CASO NÃO SEJA COMPATIVEL PULA PRO SEGUNDO E ASSIM ATÉ A MENSAGEM ABAIXO -->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+
+    </video>
+
+</body>
+
+</html>
