@@ -1,0 +1,40 @@
+    @charset "UTF-8";
+    /* uma regra chamada charset para não ter problema de compatibilidade de caracteres especiais dentro das CSS */
+    
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    main {
+        background-color: #ffffff;
+        border-radius: 10px;
+        /* arredondar bordas */
+        box-shadow: 5px 5px 15px #c5a9a3e8;
+        /* sombra, porém tem 4 parametros: quanto vai andar para o lado, quanto para baixo, espalhar, transparencia e cor  */
+        width: 600px;
+        /* largura */
+        padding: 10px;
+        /* para dar um espaçamento caso esteja cortando as letras */
+        margin: auto;
+        /* centraliza independente do tamanho da tela */
+    }
+    
+    body {
+        background-image: linear-gradient(to right, #D9C5C1, #D8D9D0);
+    }
+    
+    h1 {
+        color: #104711;
+        text-align: center;
+        /* centralizar */
+        text-shadow: 1px 1px 2px #0c3b0dcc;
+        /* mesma coisa do box shadow porém com texto */
+    }
+    
+    h2 {
+        color: #4F8C53;
+    }
+    
+    p {
+        text-align: justify;
+    }

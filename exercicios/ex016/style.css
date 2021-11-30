@@ -1,0 +1,9 @@
+    * {
+        /* o asterisco é uma configuração global das CSS */
+        height: 100%;
+        /* height é altura */
+    }
+    
+    body {
+        background-image: linear-gradient(160deg, #843DB6, #C42775, #E40F35, #F63600, #F8A700);
+    }
