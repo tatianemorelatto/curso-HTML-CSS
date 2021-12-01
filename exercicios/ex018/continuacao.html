@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas </title>
+
+    <!-- EM FONTES PODEMOS TAMBÉM BAIXAR FONTES DE SITES
+    Site exemplo: dafont.com 
+
+        NÓS TEMOS QUE BAIXAR A FONTE SELECIONADA, COLOCAR NA PASTA DO NOSSO ARQUIVO CSS E FAZER A CONFIGURAÇÃO CORRETA EM CSS
+
+
+        LEMBRANDO: PARA USAR ESSE METÓDO NUM SITE REAL, AS FONTES PRECISAM ESTAR SALVAS NO SERVIDOR QUE ESTÁ O SITE.
+
+-->
+
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /* NO FONT-FAMILY: VOCÊ QUEM ESCOLHE O NOME DA FAMILIA DA FONTE
+            
+            NO SRC: É O NOME DA FONTE BAIXADA, EXATAMENTE COMO ESTÁ, INCLUINDO ESPAÇOS 
+
+            NO SRC TAMBÉM TEMOS O PARAMETRO FORMAT = QUE VAI INDICAR O TIPO DA FONTE
+
+            TIPOS DE FORMAT()
+
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-att (Apple Advanced Typography)
+            - svg
+
+            CADA NAVEGADOR PODE SER COMPATIVEL COM UM TIPO DIFERENTE, É NECESSÁRIO PESQUISAR OU TESTAR EM CADA UM.
+
+            FONT-WEIGHT: PARA DEIXAR SEM NEGRITO
+            FONT-STYLE: SEM SUBLINHADO E SEM ITALICO, AMBOS FICAM COMO NORMAL
+            
+            */
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            font-family: 'Love', Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero tempore possimus saepe debitis! Eos tenetur laudantium enim corrupti consectetur deleniti voluptas mollitia molestiae totam exercitationem autem, minima, a, perferendis iure?</p>
+
+    <h2>Título 2</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, enim voluptate. Ipsum, hic tempore voluptate aliquam id impedit quaerat aperiam natus eius veniam accusantium delectus, ducimus, voluptates quod. Non, ea!</p>
+</body>
+
+</html>

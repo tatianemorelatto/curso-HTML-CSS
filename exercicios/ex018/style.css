@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/* 
+
+    LEMBRANDO QUE TUDO O QUE COMEÇA COM @ É UMA REGRA
+
+    AS REGRAS PRECISAM ESTAR FORA DOS SELETORES E NAS PRIMEIRAS LINHAS DO DOCUMENTO CSS
+
+
+
+*/

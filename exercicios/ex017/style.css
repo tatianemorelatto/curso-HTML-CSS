@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/* css safe font combinations - no w3Schools vai mostrar todas as fontes que combinam
+    O certo é inserirmos as 3 fontes, então quando digitarmos uma fonte, o VScode já vai dar as 3 combinadas.
+    ISSO OCORRE POR SEGURANÇA, POIS PODE SER QUE UM CELULAR TENHA ARIAL MAS UMA TV NÃO, ENTÃO ELE VAI PROCURAR A OUTRA FONTE DESSAS 3 para ficar formatado em vários aparelhos.  
+    
+  ------------------------------------------------
+  
+                TAMANHO DE FONTES
+
+    Medidas Absolutas - cm, mm, in(polegada), px, pt, pc(paica)
+
+    Medidas Relativas - em (tamanho atual da fonte/ relativo ao M maiusculo), ex (altura x da fonte), rem (relativo ao root -fonte configurada no body), vw (largura da view port (largura da sua tela), vh(altura da view port), % (porcentagem)
+
+    A W3C recomenda que para medida de fonte, para font-size, ele recomenda o uso do (px) e (em), as demais, não usar.
+    
+    
+    NORMALMENTE OS NAVEGADORES TEM COMO PADRÃO 16px DE TAMANHO
+
+    1em geralmente é = a 16x
+
+    2em tem 32px, sempre dobra o valor do px.
+    
+    O em é sempre o tamanho relativo da coisa.
+    
+    
+--------------------------------------------------
+
+            PESO DA FONTE
+
+    font-weight é o peso da fonte (nem todas as fontes possuem váriação de pesos) 
+
+    Pesos literais = 
+    lighter = mais leve
+    normal = normal mesmo
+    bold = mais grossa
+    bolder = mais grossa que o bold 
+
+    Variação numerica:
+
+    100 a 900 pulando de 100 em 100.
+
+
+     font-weight: normal;  para deixar em negrito
+    font-style: italic;   para deixar em italico 
+    text-decoration: underline;  para deixar sublinhado
+
+    Depende de cada fonte, pois ela pode não permitir essas configurações de style
+
+
+    EXISTE UMA PROPRIEDADE CHAMADA SHORTHAND PARA FONTE
+    Que você consegue digitar uma unica linha com várias configurações, exemplo:
+
+    Geralmente usamos muito as configurações
+
+    font-family
+    font-weight
+    font-size
+    font-style
+
+    Quando utilizamos essas, podemos simplificar usando apenas uma linha, mas é necessário seguir uma ordem
+
+    Primeiro preencher o font-style -> font-weight -> font-size -> font-family 
+
+    Ficando assim:
+
+    font: italic bolder 3em Arial, sans-serif;   POR EXEMPLO, lembrando que as configurações podem mudar
+
+    Também podemos tirar uma configuração caso não queira usar, mas precisam estar na ordem informada
+
+
+    */
