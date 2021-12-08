@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*
+
+EM HTML é id = em CSS é #
+Em HTML é class = em CSS é .
+
+Dentro de um arquivo, só posso usar um UNICO ID POR PAGINA   (de acordo com o W3C)
+
+Então nesse caso se o ID, já foi usado no h1, não posso usa-lo em outros elementos.
+
+Se eu quero usar a mesma config em 2 elementos ou mais, vamos usar uma class
+
+De nome para o ID e Class de acordo com a funcionalidade
+
+
+*/
+
+body {
+    background-color: rgb(202, 250, 202);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(58, 126, 58);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(58, 126, 58);
+    color: white;
+}
+
+
+/* SELETOR PERSONALIZADO 
+
+nesse h1#principal, posso deixar assim, ou apenas #principal*/
+
+h2 {
+    color: rgb(73, 175, 73);
+}
+
+.basico {
+    color: rgb(85, 206, 74);
+    font-weight: bold;
+}
+
+.intermed {
+    color: rgb(243, 243, 78);
+}
+
+.avancado {
+    color: brown;
+}
+
+.destaque {
+    background-color: yellow;
+}
