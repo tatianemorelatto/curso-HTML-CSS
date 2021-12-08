@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando HOVER</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div {
+            border: 1px solid black;
+            display: inline-block;
+            background-color: rgb(199, 199, 199);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+        
+        div>p.sumiu {
+            display: none;
+        }
+        
+        div:hover>p#az {
+            display: block;
+            color: rgb(26, 221, 114);
+        }
+        
+        div:hover>p#ve {
+            display: block;
+            color: yellow;
+        }
+        
+        div:hover>p#am {
+            display: block;
+            color: red;
+        }
+        
+        div#d1:hover {
+            background-color: blue;
+        }
+        
+        div#d2:hover {
+            background-color: red;
+        }
+        
+        div#d3:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando</h1>
+    <p>Passe o mouse em cima para verificar</p>
+    <div id="d1">
+        <p>Passe o mouse aqui</p>
+        <p id="az" class="sumiu">COR AZUL</p>
+    </div>
+    <div id="d2">
+        <p>Passe o mouse aqui</p>
+        <p id="ve" class="sumiu">COR VERMELHA</p>
+    </div>
+    <div id="d3">
+        <p>Passe o mouse aqui</p>
+        <p id="am" class="sumiu">COR AMARELA</p>
+    </div>
+</body>
+
+</html>
